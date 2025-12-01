@@ -1,0 +1,42 @@
+# Network Security Monitoring Lab
+
+Home lab project for analyzing network traffic and detecting security threats.
+
+## What I Used
+
+- Python
+- Wireshark
+- Splunk
+- Nmap
+- Linux
+
+## What I Did
+
+### Step 1: Set Up Lab Environment
+Set up VirtualBox with a few VMs to create a test network. One VM for attacking, one for monitoring, one as the target.
+
+### Step 2: Captured Network Traffic
+Used Wireshark to capture packets on the network. Set it to capture everything so I could see what's happening on the network.
+
+### Step 3: Analyzed with Splunk
+Configured Splunk to read the network logs from Wireshark. Set up some basic dashboards to visualize the traffic patterns.
+
+### Step 4: Python Scripts
+Wrote Python scripts to parse through logs automatically and look for suspicious activity like port scans or failed login attempts. Scripts send alerts when they find something.
+
+### Step 5: Tested Detection
+Ran Nmap scans and other attacks against my test network to see if my monitoring setup could detect them. It caught most of the attacks.
+
+### Step 6: Made Dashboards
+Created Splunk dashboards showing network activity, alerts, and top traffic sources.
+
+## Results
+
+The lab successfully detected port scans and suspicious network activity. Python scripts reduced the time spent manually checking logs.
+
+## What I Learned
+
+- How to analyze network traffic
+- Setting up SIEM tools
+- Python automation for security monitoring
+- Detecting different types of network attacks
